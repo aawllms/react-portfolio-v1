@@ -1,9 +1,8 @@
 function Nav() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand">Aaron Williams</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -17,17 +16,21 @@ function Nav() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a
+                className="nav-link active text-light"
+                aria-current="page"
+                href="/"
+              >
                 About Me
               </a>
-              <a className="nav-link" href="/portfolio">
+              <a className="nav-link active text-light" href="/portfolio">
                 Portfolio
               </a>
-              <a className="nav-link" href="/contact">
+              <a className="nav-link active text-light" href="/contact">
                 Contact
               </a>
               <a
-                className="nav-link"
+                className="nav-link active text-light"
                 href="https://drive.google.com/file/d/1SxRqoXPQHGFq0HD2kemqU-X3eGQb8CJ3/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,50 +1,70 @@
 function About() {
   return (
-    <>
-      <div className="card mb-3">
+    <div
+      className="d-flex justify-content-center"
+      style={{
+        backgroundImage: "url(./IMG_9625.jpeg)",
+        minHeight: "85vh",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div
+        className="card mb-3 mt-5 p-5"
+        style={{
+          width: "80%",
+        }}
+      >
         <img
-          src="../src/assets/IMG_3135.png"
+          src="./IMG_3135.png"
           className="card-img-top"
           alt="..."
           style={{
-            width: "25%",
-            height: "auto",
+            width: "200px",
+            height: "200px",
             justifyContent: "center",
             alignItems: "center",
+            borderRadius: "100px",
           }}
         />
         <div className="card-body">
-          <h5 className="card-title">About Me</h5>
+          <h3 className="card-title">About Me</h3>
           <p className="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            laborum natus soluta fugit inventore corrupti, tempore debitis
-            iusto! Dolorum ut laudantium facilis ullam voluptatibus esse dolore
-            reprehenderit neque sapiente cum. Dicta magni sed aliquam, eaque,
-            vitae cum quo suscipit, facere quod tenetur quasi. Veniam quae
-            doloremque, deleniti incidunt, illum adipisci ratione rerum
-            consequuntur voluptate minima nesciunt. Nisi distinctio voluptates
-            saepe nam? Earum officia adipisci fugit laboriosam ut. Hic nobis
-            mollitia odio iste minima voluptates assumenda saepe sit dolores
-            magnam ea, cupiditate itaque dicta! Eius, excepturi distinctio! Cum
-            dolore consequatur quibusdam suscipit accusamus nisi! Dolore quod
-            explicabo ullam error fugit iste quas sint sit, esse quae, unde
-            atque? Iure iste nulla reiciendis repellat eum sint adipisci, totam
-            fugiat, amet ipsum illo et atque tempora facilis velit in fuga
-            consectetur nam id accusantium ducimus sapiente autem. Labore atque
-            ratione saepe nam totam eum reprehenderit quisquam. Molestias nam
-            accusantium optio reiciendis saepe neque, necessitatibus a culpa sit
-            pariatur fugit nemo enim voluptates est esse corporis cum quidem!
-            Tenetur id ipsa impedit totam, quas, aspernatur molestiae
-            exercitationem sunt fugiat asperiores quidem est libero cum incidunt
-            eligendi at vel earum voluptatum, illo fuga. Ullam error soluta sit
-            vel voluptatibus. Aspernatur in officiis provident itaque aliquid!
+            Hi, I’m Aaron Williams but most people call me Wills. My journey has
+            been anything but conventional. I started my career in the
+            construction industry, where I learned the value of hard work,
+            problem-solving, and teamwork. After several years, I decided to
+            shift gears and transition into the tech world, where I found a new
+            passion. Today, I’m diving deep into full-stack development,
+            constantly learning and growing in the ever-evolving tech landscape.
+            <br />
+            <br />
+            Along the way, I’ve also raised a child as a sole parent who was
+            born with a heart defect. It’s been a challenging but incredibly
+            rewarding experience, and it has taught me a lot about resilience,
+            empathy, and prioritizing what truly matters.
+            <br />
+            <br />
+            A big part of my life has been shaped by my travels. I had the
+            privilege of living and volunteering in Kenya, where I worked with
+            underserved communities, helping people with disabilities and those
+            in low-income areas access proper healthcare. This experience was
+            eye-opening, showing me the power of community, the importance of
+            accessible care, and how little things can make a huge difference in
+            someone’s life.
+            <br />
+            <br />
+            In my free time, you’ll find me enjoying some adrenaline-filled
+            hobbies like mountain biking, paramotoring, and riding motorcycles.
+            I also love to travel, explore new places, and take in all the
+            experiences the world has to offer.
           </p>
           <p className="card-text">
             <small className="text-body-secondary"></small>
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

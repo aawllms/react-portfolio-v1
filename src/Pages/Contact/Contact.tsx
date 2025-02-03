@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 function Contact() {
-//   const [formState, setFormState] = useState({
-//     name: "",
-//     email: "",
-//     message: "",
-//   });
+  //   const [formState, setFormState] = useState({
+  //     name: "",
+  //     email: "",
+  //     message: "",
+  //   });
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
@@ -26,15 +26,21 @@ function Contact() {
   };
   const noMessageInput = () => {
     if (messageInput === "") {
-      document.getElementById("message-warning")?.classList.remove("d-done");
+      document.getElementById("message-warning")?.classList.remove("d-none");
     } else {
-      document.getElementById("message-warning")?.classList.add("d-done");
+      document.getElementById("message-warning")?.classList.add("d-none");
     }
   };
 
   const handleFormSubmit = (event: any) => {
     event.preventDefault();
-    console.log(event);
+    console.log(nameInput);
+    console.log(emailInput);
+    console.log(messageInput);
+    // console.log("Form Submitted");
+    setNameInput("");
+    setEmailInput("");
+    setMessageInput("");
   };
 
   // const noEmailInput = (e) => {
@@ -51,13 +57,11 @@ function Contact() {
     <>
       <div
         style={{
-          //   backgroundImage:
-          //     "url('https://unsplash.com/photos/lines-of-html-codes-4hbJ-eymZ1o')",
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          //   minHeight: "100vh",
+          minHeight: "85vh",
           backgroundColor: "#0b3d7a",
           color: "white",
+          padding: "20px",
+          fontSize: "20px",
         }}
       >
         <form onSubmit={handleFormSubmit} className="container-sm">
@@ -70,9 +74,10 @@ function Contact() {
               className="form-control"
               id="nameInput"
               placeholder="Name"
+              value={nameInput}
               onChange={(event) => {
                 setNameInput(event.target.value);
-                console.log(nameInput);
+                // console.log(nameInput);
               }}
               onBlur={noInput}
             />
@@ -89,9 +94,10 @@ function Contact() {
               className="form-control"
               id="emailInput"
               placeholder="name@example.com"
+              value={emailInput}
               onChange={(event) => {
                 setEmailInput(event.target.value);
-                console.log(emailInput);
+                // console.log(emailInput);
               }}
               onBlur={noEmailInput}
             />
@@ -111,17 +117,29 @@ function Contact() {
               className="form-control"
               id="messageInput"
               placeholder="Please write your message here"
-              rows={3}
+              rows={5}
               onChange={(event) => {
                 setMessageInput(event.target.value);
                 // console.log(messageInput);
               }}
+              value={messageInput}
               onBlur={noMessageInput}
             ></textarea>
             <p id="message-warning" className="text-danger d-none">
               Message Required
             </p>
           </div>
+          <button
+            style={{
+              width: "100%",
+              backgroundColor: "black",
+              color: "white",
+              padding: "10px",
+              fontSize: "20px",
+            }}
+          >
+            Submit
+          </button>
         </form>
       </div>
     </>

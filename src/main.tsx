@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Resume from "./Pages/Resume/Resume.tsx";
+import Resume from "./components/Header/Header.tsx";
 import About from "./Pages/About/About.tsx";
 import Contact from "./Pages/Contact/Contact.tsx";
 
