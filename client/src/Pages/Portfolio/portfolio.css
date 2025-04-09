@@ -1,0 +1,23 @@
+.portfolio-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .portfolio-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Adjust color as needed */
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Add more styles as needed */
