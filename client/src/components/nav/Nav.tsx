@@ -1,5 +1,4 @@
-
-import { FaGithub, FaLinkedin } from "react-icons/fa"; 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Nav() {
@@ -19,15 +18,19 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link className="nav-link active text-light" aria-current="page" to="/">
+            <Link
+              className="nav-link active text-light"
+              aria-current="page"
+              to="/"
+            >
               About Me
             </Link>
             <Link className="nav-link active text-light" to="/portfolio">
               Portfolio
             </Link>
-            <Link className="nav-link active text-light" to="/contact">
+            {/* <Link className="nav-link active text-light" to="/contact">
               Contact
-            </Link>
+            </Link> */}
             <a
               className="nav-link active text-light"
               href="https://drive.google.com/file/d/16Jkbd2tAsDQdTKzgDKKcn_SqR_oMGWiH/view?usp=sharing"
