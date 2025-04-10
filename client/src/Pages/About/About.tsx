@@ -9,6 +9,7 @@ function About() {
         minHeight: "85vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundPosition: "center"
       }}
     >
       <div
